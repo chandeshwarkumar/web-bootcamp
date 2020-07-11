@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+  
+    <ul class="tabs group">
+      <li><a class="active" href="#/one">Light &</a></li>
+      <li><a href="#/two">Elegant</a></li>
+      <li><a href="#/three">Tabs</a></li>
+    </ul>
+    
+    <div id="content">
+      <p id="one">Some text about Light sit amet, consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur </p>
+      <p id="two">Sexy sexy  consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p>
+      <p id="three">Tabs , consectetur adipisicing elit. Pariatur modi quod quo iure recusandae eligendi q.t, consectetur adipisicing elit. Pariatur modi quod quo iureq</p>
+    </div>
+    
+  </div>
+
+    <script>
+        (function($) {
+
+            var tabs =  $(".tabs li a");
+
+            tabs.click(function() {
+                var content = this.hash.replace('/','');
+                tabs.removeClass("active");
+                $(this).addClass("active");
+            $("#content").find('p').hide();
+            $(content).fadeIn(200);
+            });
+
+        })(jQuery);
+    </script>
+</body>
+</html>
+
+<

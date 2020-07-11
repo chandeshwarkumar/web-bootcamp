@@ -1,0 +1,16 @@
+h1{
+	color: blue;
+	border: 5px solid purple;
+}
+li{
+	color: orange;
+}
+h4{
+	background-color: rgba(50,100,150,0.5);
+}
+body{
+	background-color: pink;
+	/*background: url(https://thumbs.dreamstime.com/b/close-up-natural-wood-grain-texture-background-close-up-close-up-natural-wood-grain-texture-background-horizontal-background-139864578.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/

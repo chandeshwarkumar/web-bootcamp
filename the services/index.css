@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #028090;
+}
+h1{
+    display: inline;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid white;
+}
+.main{
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #f0f3bd;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content:space-around;
+}
+.services-name{
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.icon-box{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #02c39a;
+    transform: rotate(45deg);
+    color: #02c39a;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.icon-box i{
+    display: inline-block;
+    line-height: 50px;
+    transform:rotate(-45deg);
+}
+.icon-box:hover{
+    color: white;
+    background-color: #02c39a;
+    cursor: pointer;
+}
+.service-heading{
+    font-weight: 700;
+    color: #05668d;
+}
+p{
+    font-size: small;
+}
